@@ -1,8 +1,8 @@
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
-    console.log('🛑🛑🛑🛑🛑🛑');
+    console.log('🛑🛑🛑🛑🛑🛑 ' +  actual + ' !== ' + expected);
   } else {
-    console.log('✅✅✅✅✅✅');
+    console.log('✅✅✅✅✅✅ ' +  actual + ' === ' + expected);
   }
 };
 
