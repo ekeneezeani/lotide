@@ -33,7 +33,7 @@ const without = function(source,itemsToRemove) {
   for (let i = 0; i < itemsToRemove.length; i++) {
     //console.log(itemsToRemove[i]);
     for (let j = 0; j < source.length; j++) {
-      if(source[j] === itemsToRemove[i]) {
+      if (source[j] === itemsToRemove[i]) {
         newArray.splice(j,1);
         //console.log(j);
       }
