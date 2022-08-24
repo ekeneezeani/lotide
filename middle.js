@@ -23,6 +23,7 @@
 //   return label;
 // };
 
+
 const middle = function(arr) {
   const length = arr.length;
   const isEven = length % 2 === 0;
@@ -30,7 +31,6 @@ const middle = function(arr) {
   let returnValue = [];
   if (length <= 2) {
     return '[]';
-    process.exit();
   }
 
   if (isEven) {
@@ -42,9 +42,9 @@ const middle = function(arr) {
   }
   return returnValue;
 };
-middle([1]); // => []
-middle([1, 2]); // => []
-middle([1, 2, 3, 4]); // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
-middle([1, 2, 3]); // => [2]
-middle([1, 2, 3, 4, 5]); // => [3]
+console.log(middle([1]));
+console.log(middle([1, 2, 3]));
+console.log(middle([1, 2, 3, 4, 5]));
+console.log(middle([1, 2, 3, 4]));
+console.log(middle([1, 2, 3, 4, 5, 6]));
+console.log(middle([1, 2]));
