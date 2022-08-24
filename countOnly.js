@@ -13,7 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
   const result = {};
   
   for (const property in itemsToCount) {
-    if (itemsToCount[property] === true) {
+    if ((itemsToCount[property] === true) && allItems.includes(property)) {
       console.log(property);
       let count = 0;
       for (const item of allItems) {
@@ -21,8 +21,8 @@ const countOnly = function(allItems, itemsToCount) {
           count += 1;
         }
       }
-      if (allItems.includes(property))
-        result[property] = count;
+      // if (allItems.includes(property))
+      result[property] = count;
       
     }
   }
