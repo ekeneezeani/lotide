@@ -23,9 +23,9 @@ const eqArrays = function(arr1, arr2) {
   return label;
 };
 
-const assertArraysEqual = function(arr1, arr2, bool) {
-  return assertEqual(eqArrays(arr1,arr2), bool);
+const assertArraysEqual = function(arr1, arr2) {
+  return assertEqual(eqArrays(arr1,arr2), true);
 };
 
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3], true));
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1], true));
+console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]));
+console.log(assertArraysEqual([1, 2, 3], [3, 2, 1]));
