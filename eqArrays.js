@@ -1,19 +1,17 @@
 
 const eqArrays = function(arr1, arr2) {
-  let label = false;
+  //let label = false;
   if (arr1.length !== arr2.length) {
     return false;
   } else {
     for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        label = true;
-      } else {
-        label = false;
-        break;
+      if (arr1[i] !== arr2[i]) {
+        //label = true;
+        return false
       }
     }
   }
-  return label;
+  return true;
 };
 
 console.log(eqArrays([1, 2, 3], [1, 2, 3]));

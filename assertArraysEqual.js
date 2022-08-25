@@ -23,28 +23,6 @@
 //   return label;
 // };
 
-const middle = function(arr) {
-  const length = arr.length;
-  const isEven = length % 2 === 0;
-  const mid = Math.floor(length / 2);
-  let returnValue = [];
-  if (length <= 2) {
-    return '[]';
-    process.exit();
-  }
-
-  if (isEven) {
-    returnValue.push(arr[mid - 1]);
-    returnValue.push(arr[mid]);
-  } else {
-
-    returnValue.push(arr[mid]);
-  }
-  return returnValue;
+const assertArraysEqual = function(arr1, arr2, bool) {
+  return assertEqual(eqArrays(arr1,arr2), bool);
 };
-middle([1]); // => []
-middle([1, 2]); // => []
-middle([1, 2, 3, 4]); // => [2, 3]
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
-middle([1, 2, 3]); // => [2]
-middle([1, 2, 3, 4, 5]); // => [3]
