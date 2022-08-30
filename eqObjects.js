@@ -1,19 +1,5 @@
-const eqArrays = function (arr1, arr2) {
-  let label = false;
-  if (arr1.length !== arr2.length) {
-    return false;
-  } else {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        label = true;
-      } else {
-        label = false;
-        break;
-      }
-    }
-  }
-  return label;
-};
+const eqArrays = require('./eqArrays');
+
 
 const eqObjects = function (object1, object2) {
   const numOfKeys1 = Object.keys(object1);
@@ -36,12 +22,14 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-const cd2 = { c: "1", d: ["2", 3, 4] };
-const ab = { a: "2", b: "1" };
-const ba = { b: "1", a: "2" };
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// const ab = { a: "2", b: "1" };
+// const ba = { b: "1", a: "2" };
 
-console.log(eqObjects(cd, dc));
-console.log(eqObjects(cd, cd2));
-console.log(eqObjects(ab, ba));
+// console.log(eqObjects(cd, dc));
+// console.log(eqObjects(cd, cd2));
+// console.log(eqObjects(ab, ba));
+
+module.exports = eqObjects;

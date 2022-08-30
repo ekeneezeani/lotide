@@ -20,4 +20,5 @@ const reverse = function(str) {
 };
 //console.log(reverse('Happy'));
 
-console.log(reverseArg(argsArray));
+// console.log(reverseArg(argsArray));
+module.exports = reverse;

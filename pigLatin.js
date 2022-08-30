@@ -14,4 +14,5 @@ const pigLatin = function(str) {
 
   return returnValue;
 };
-console.log(pigLatinArr(argsArray));
+// console.log(pigLatinArr(argsArray));
+module.exports = pigLatin;

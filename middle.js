@@ -30,7 +30,7 @@ const middle = function(arr) {
   const mid = Math.floor(length / 2);
   let returnValue = [];
   if (length <= 2) {
-    return '[]';
+    return [];
   }
 
   if (isEven) {
@@ -42,9 +42,5 @@ const middle = function(arr) {
   }
   return returnValue;
 };
-console.log(middle([1]));
-console.log(middle([1, 2, 3]));
-console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 5, 6]));
-console.log(middle([1, 2]));
+
+module.exports = middle;

@@ -1,10 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑🛑🛑🛑🛑🛑 ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅✅✅✅✅✅ ${actual} === ${expected}`);
-  }
-};
 
 const countLetters = function(strInput) {
   const str = strInput.split(' ').join('');
@@ -24,13 +17,15 @@ const countLetters = function(strInput) {
 };
 
 
-const result = countLetters('LHL Is Good');
-console.log(result);
+// const result = countLetters('LHL Is Good');
+// console.log(result);
 
-assertEqual(result['L'], 2);
-assertEqual(result['H'], 1);
-assertEqual(result['I'], 1);
-assertEqual(result['s'], 1);
-assertEqual(result['G'], 1);
-assertEqual(result['o'], 2);
-assertEqual(result['d'], 1);
+// assertEqual(result['L'], 2);
+// assertEqual(result['H'], 1);
+// assertEqual(result['I'], 1);
+// assertEqual(result['s'], 1);
+// assertEqual(result['G'], 1);
+// assertEqual(result['o'], 2);
+// assertEqual(result['d'], 1);
+
+module.exports = countLetters;

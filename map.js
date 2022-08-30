@@ -34,15 +34,16 @@ const map = function(array, callback) {
   }
   return results;
 };
-const results1 = map(words, word => word.length);
-const results2 = map(words, word => word[0]);
-const results3 = map(words, word => word[word.length - 1]);
+// const results1 = map(words, word => word.length);
+// const results2 = map(words, word => word[0]);
+// const results3 = map(words, word => word[word.length - 1]);
 
-const test1 = [ 6, 7, 2, 5, 3 ];
-const test2 = [ 'g', 'c', 't', 'm', 't'];
-const test3 = [ 'd', 'l', 'o', 'r', 'm' ];
-console.log(assertEqual(results1,test1));
-console.log(assertEqual(results2,test2));
-console.log(assertEqual(results3,test3));
+// const test1 = [ 6, 7, 2, 5, 3 ];
+// const test2 = [ 'g', 'c', 't', 'm', 't'];
+// const test3 = [ 'd', 'l', 'o', 'r', 'm' ];
+// console.log(assertEqual(results1,test1));
+// console.log(assertEqual(results2,test2));
+// console.log(assertEqual(results3,test3));
 
 //console.log(results1 + '\n' + results2 + '\n' + results3);
+module.exports = map;
